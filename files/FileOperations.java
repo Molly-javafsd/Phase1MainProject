@@ -10,7 +10,8 @@ public static void main(String[] args) throws IOException {
 	Scanner sc=new Scanner(System.in);
 	
 	while(true) {
-		System.out.println("\n\nEnter your choice: \n 1.Display\n 2.Add/Delete/Search\n 3.Exit from this program");
+		System.out.println("\n\nMain menu");
+		System.out.println("Enter your choice: \n\t 1.Display\n\t 2.Add/Delete/Search\n\t 3.Exit from this program");
 		int m=sc.nextInt();
 		
 		String path="F:\\ProjectFiles\\";
@@ -29,7 +30,8 @@ public static void main(String[] args) throws IOException {
 		case 2:
 			boolean z=true;
 			while(z) {
-			System.out.println("\n\n2.Enter the operation to be done:\n a.Add files\n b.Delete files\n c.Search for a file\n d.Exit/Go to main menu");
+				System.out.println("\n\nSub-menu");
+			System.out.println("\t2.Enter the operation to be done:\n\t\t a.Add files\n\t\t b.Delete files\n\t\t c.Search for a file\n\t\t d.Go to the main menu");
 			String i=sc.next();
 			switch(i) {
 			
@@ -101,9 +103,12 @@ public static void main(String[] args) throws IOException {
 		case 3:
 			System.exit(0);
 			break;
+			
+			default:
+				System.out.println("Invalid choice");
+				break;
 	}
 	}
 
 }
 }
-
