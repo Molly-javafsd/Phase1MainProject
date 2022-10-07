@@ -11,11 +11,11 @@ public static void main(String[] args) throws IOException {
 	
 	while(true) {
 		System.out.println("\n\nEnter your choice: \n 1.Display\n 2.Add/Delete/Search\n 3.Exit from this program");
-		int a=sc.nextInt();
+		int m=sc.nextInt();
 		
 		String path="F:\\ProjectFiles\\";
 		
-		switch(a) {
+		switch(m) {
 		
 		case 1:
 			System.out.println("Displaying all the files present in the path: "+path);
