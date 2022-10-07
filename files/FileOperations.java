@@ -29,11 +29,11 @@ public static void main(String[] args) throws IOException {
 		case 2:
 			boolean z=true;
 			while(z) {
-			System.out.println("\n\nEnter the operation to be done:\n 1.Add files\n 2.Delete files\n 3.Search for a file\n 4.Exit from this sub-menu");
-			int b=sc.nextInt();
-			switch(b) {
+			System.out.println("\n\n2.Enter the operation to be done:\n a.Add files\n b.Delete files\n c.Search for a file\n d.Exit/Go to main menu");
+			String i=sc.next();
+			switch(i) {
 			
-			case 1:{
+			case "a":{
 				System.out.println("Enter the file to be created in path: "+path);
 				String file=sc.next();
 
@@ -49,7 +49,7 @@ public static void main(String[] args) throws IOException {
 				}
 				break;
 			}
-			case 2:{
+			case "b":{
 				System.out.println("Enter the file to be deleted in path: "+path);
 				String file2=sc.next();
 
@@ -63,7 +63,7 @@ public static void main(String[] args) throws IOException {
 				 }
 				break;
 			}
-			case 3:{
+			case "c":{
 				System.out.println("Enter the file name to be searched within the path: "+path);
 				String file3=sc.next();
 				
@@ -87,13 +87,17 @@ public static void main(String[] args) throws IOException {
 				}
 				break;
 			}
-			case 4:{
+			case "d":{
 				z=false;
 				break;
 				}
+			default:
+				System.out.println("Invalid choice");
+				break;
+				
 			}
 			}
-break;
+			break;
 		case 3:
 			System.exit(0);
 			break;
@@ -102,3 +106,4 @@ break;
 
 }
 }
+
