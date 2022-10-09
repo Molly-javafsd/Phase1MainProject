@@ -77,7 +77,7 @@ public static void main(String[] args) throws IOException {
 				for(File ff: filenames1) {
 					if(ff.getName().equals(file3)) {
 						flag=1;
-					
+						break;
 					}
 				}
 
